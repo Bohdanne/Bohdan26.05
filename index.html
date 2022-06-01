@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Document </title>
+    <style>
+    	.container {
+            background-color: red;
+            display: grid;
+            grid-template-areas:
+            'header header header header left-menu left-menu'
+            'main-area main-area right-area right-area right-area right-area '
+            'footer footer footer footer footer footer';
+         }
+         .container header, nav, main, aside ,footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+         header{
+            grid-area: header;
+            background-color: #FF3D00;
+        }
+       nav{
+            grid-area: left-menu;
+            background-color: #F49300;
+            height: 90px;
+        }
+         main{
+            grid-area: main-area;
+            background-color: #2C80FF;
+            height: 665px;
+        }
+        aside{
+            grid-area: right-area;
+            background-color: yellow;
+            position: relative;
+        }
+        .sub-left{
+            grid-area: sub-left;
+            background-color: #FB00B5;
+            height: 80px;
+            width: 400px;
+            position: absolute;
+            bottom: 600px;
+            right: 230px;
+
+        }
+        .sub-right{
+            grid-area: sub-right;
+            background-color: #C4C4C4;
+            height: 80px;
+            width: 400px;
+            position: absolute;
+            bottom: 550px;
+            right: 290px;
+         }
+			.sub-start{
+            grid-area: sub-start;
+            background-color: #F49300;
+            height: 80px;
+            width: 400px;
+            position: absolute;
+            bottom: 490px;
+            right: 230px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: green;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    	<header>  </header>
+    	<nav>  </nav>
+        <main> </main>
+        <aside>
+        	<hgroup class="sub-left" >  </hgroup>
+        	<hgroup class="sub-right" >  </hgroup>
+        	<hgroup class="sub-start" >  </hgroup>
+        </aside>
+        <footer>  </footer>
+    </div>
+</body>
+</html>
